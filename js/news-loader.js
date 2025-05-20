@@ -99,7 +99,7 @@ function createNewsCard(announcement, isFeatured = false) {
 async function loadAnnouncements() {
     try {
         // Fetch the announcements data
-        const response = await fetch('/docs/announcements/posts/_metadata.yml');
+        const response = await fetch('/website_test/docs/announcements/posts/_metadata.yml');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
