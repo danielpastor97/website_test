@@ -99,7 +99,7 @@ function createNewsCard(announcement, isFeatured = false) {
 async function loadAnnouncements() {
     try {
         // Fetch the announcements data
-        const response = await fetch('/docs/announcements/posts/_metadata.yml');
+        const response = await fetch('/website_test/docs/announcements/posts/_metadata.yml');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -138,7 +138,7 @@ async function loadAnnouncements() {
         const viewAllButton = document.createElement('div');
         viewAllButton.className = 'view-all-container';
         viewAllButton.innerHTML = `
-            <a href="/docs/announcements/" class="view-all-button">
+            <a href="/website_test/docs/announcements/" class="view-all-button">
                 <span>View All Announcements</span>
                 <span class="arrow">→</span>
             </a>
