@@ -6,20 +6,150 @@
       version="2.0">
 <channel>
 <title>Martini Force Field Initiative</title>
-<link>https://martini-force-field-initiative.github.io/docs/announcements/</link>
-<atom:link href="https://martini-force-field-initiative.github.io/docs/announcements/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://cgmartini.nl/docs/announcements/</link>
+<atom:link href="https://cgmartini.nl/docs/announcements/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <image>
-<url>https://martini-force-field-initiative.github.io/images/martini.gif</url>
+<url>https://cgmartini.nl/images/martini.gif</url>
 <title>Martini Force Field Initiative</title>
-<link>https://martini-force-field-initiative.github.io/docs/announcements/</link>
+<link>https://cgmartini.nl/docs/announcements/</link>
 </image>
-<generator>quarto-1.5.55</generator>
-<lastBuildDate>Thu, 23 May 2024 06:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Fri, 02 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Martini workshop 2025 in Groningen</title>
+  <dc:creator>SJ MARRINK</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2025-05-02-martini-workshop/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!-- 
+The text below is just an example. Please replace it with the actual description of the announcement. You can use markdown syntax to format the text.
+-->
+<p>Finally happening: another one of those famous Martini workshops !! From 11-15th of August, in the city of Groningen, The Netherlands. Learn from the Martini masters themselves. More info and registration details following soon.</p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2025-05-02-martini-workshop/</guid>
+  <pubDate>Fri, 02 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://cgmartini.nl/docs/announcements/posts/2025-05-02-martini-workshop/image.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Martini3-IDP</title>
+  <dc:creator>Chris Brasnett</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2025-03-24-martini3idp/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Martini3-IDP is a new force field developed for applications to fully disordered and multidomain proteins, with detailed parameterisation and extensive validation against a range of reference systems. The force field and its features are both fully implemented in Martinize2 and Polyply for immediate use by the community.</p>
+<p>For details, see <a href="https://www.nature.com/articles/s41467-025-58199-2">Wang et al., Nature Communications (2025)</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2025-03-24-martini3idp/</guid>
+  <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>MartiniGlass</title>
+  <dc:creator>Chris Brasnett</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2025-03-26-martiniglass/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Integrating and optimising existing tools to visualise Martini systems in VMD, MartiniGlass is a new small Python package to rapidly generate visualisable topologies for your systems. The package may be particularly useful for inspecting your protein topology, or generating nice images with coarse grained beads linked - no more VDW drawing method necessary! MartiniGlass has full documentation and tutorials on its <a href="https://martiniglass.readthedocs.io/en/stable/">readthedocs site</a></p>
+<p>For details, see <a href="https://pubs.acs.org/doi/10.1021/acs.jcim.4c02277">Brasnett and Marrink, JCIM (2025)</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2025-03-26-martiniglass/</guid>
+  <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://cgmartini.nl/docs/announcements/posts/2025-03-26-martiniglass/image.png" medium="image" type="image/png" height="141" width="144"/>
+</item>
+<item>
+  <title>Martignac</title>
+  <dc:creator>Siewert-Jan Marrink</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2024-12-18-martignac/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!-- 
+The text below is just an example. Please replace it with the actual description of the announcement. You can use markdown syntax to format the text.
+-->
+<p>The group of Bereau has developed computational workflows for reproducible, traceable, and composable Martini simulations, appropriately named ‘Martignac’. See https://pubs.acs.org/doi/10.1021/acs.jcim.4c01754 for details.</p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2024-12-18-martignac/</guid>
+  <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Changes to Martinze2 options</title>
+  <dc:creator>Chris Brasnett</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2024-11-19-martinize-0-12-0/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>As of Martinize2 version 0.12.0, the defaults of the <code>-scfix</code> and <code>-cys</code> flags have been changed.</p>
+<p><code>-scfix</code> is now assumed by default, so it is no longer necessary to specify it. If you do, a warning will be raised. If you purposefully intend to generate protein models without side chain fixes, the <code>-noscfix</code> flag can be used.</p>
+<p>Additionally, the default argument of <code>-cys</code> is changed to <code>auto</code> to search for disulfide bridges in your topology by default, so no longer needs to be explicitly specified unless you want to turn off the behaviour (<code>-cys none</code>) or specify the search distance for disulfide bridges manually (e.g.&nbsp;<code>-cys 5</code> will enforce disulfide bridges between cysteines within 5 nm of each other).</p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2024-11-19-martinize-0-12-0/</guid>
+  <pubDate>Mon, 16 Dec 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>PhD/Post doc positions</title>
+  <dc:creator>Chelsea Brown (on behalf of Siewert-Jan Marrink)</dc:creator>
+  <link>https://cgmartini.nl/docs/announcements/posts/2024-11-11-groningen-positions/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<!-- 
+The text below is just an example. Please replace it with the actual description of the announcement. You can use markdown syntax to format the text.
+-->
+<p>Building a synthetic cell is one of the greatest scientific and technological challenges of the 21st century. In the framework of a huge national Dutch program (<a href="https://www.evolf.life">EVOLF</a>) and a European Doctorate network (<a href="https://www.comeincell.org">ComeInCell</a>), we have 12 PhD/Postdoc positions available for biophysicists, bioengineers, biochemists, and molecular biologist at the <a href="https://www.rug.nl/research/gbb">Groningen Biomolecular Sciences and Biotechnology Institute</a> of the University of Groningen in the Netherlands.</p>
+<p><strong>Marrink group </strong></p>
+<ul>
+<li>Position 11: Multiscale modeling of cell division, probing the interplay between lipids and proteins for the rational design of efficient fission of artificial cells. <a href="https://doi.org/10.1038/s41467-020-16094-y">Further reading</a></li>
+<li>Position 12: Molecular dynamics simulations of minimal cells, focusing on the properties and organization of the cell envelope. <a href="https://doi.org/10.3389/fchem.2023.1106495">Further reading</a></li>
+</ul>
+<p><strong>Closing date 1/12/2024</strong></p>
+<p>Read more here: <a href="https://www.nature.com/naturecareers/job/12830433/12-phd-post-doc-positions-for-the-design-and-engineering-of-synthetic-cells-/">Nature careers</a></p>
+
+
+
+ ]]></description>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2024-11-11-groningen-positions/</guid>
+  <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Membrane buckling artefact</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-07-25-membrane-buckling-artifact/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-07-25-membrane-buckling-artifact/</link>
   <description><![CDATA[ 
 
 
@@ -32,13 +162,13 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-07-25-membrane-buckling-artifact/</guid>
-  <pubDate>Thu, 23 May 2024 06:00:00 GMT</pubDate>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-07-25-membrane-buckling-artifact/</guid>
+  <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Martini in OpenMM</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-04-13-martini_openmm/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-04-13-martini_openmm/</link>
   <description><![CDATA[ 
 
 
@@ -50,13 +180,13 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-04-13-martini_openmm/</guid>
-  <pubDate>Wed, 22 May 2024 06:00:00 GMT</pubDate>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-04-13-martini_openmm/</guid>
+  <pubDate>Wed, 22 May 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>SARS-COV2 envelope</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-04-07-sars-cov2-env/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-04-07-sars-cov2-env/</link>
   <description><![CDATA[ 
 
 
@@ -69,14 +199,14 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-04-07-sars-cov2-env/</guid>
-  <pubDate>Tue, 21 May 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-04-07-sars-cov2-env/image.jpeg" medium="image" type="image/jpeg"/>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-04-07-sars-cov2-env/</guid>
+  <pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://cgmartini.nl/docs/announcements/posts/2023-04-07-sars-cov2-env/image.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Ubiquitination driving ER protein complexation</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-06-06-ubiquitination/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-06-06-ubiquitination/</link>
   <description><![CDATA[ 
 
 
@@ -92,14 +222,14 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-06-06-ubiquitination/</guid>
-  <pubDate>Tue, 21 May 2024 06:00:00 GMT</pubDate>
-  <media:content url="https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-06-06-ubiquitination/image.png" medium="image" type="image/png" height="99" width="144"/>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-06-06-ubiquitination/</guid>
+  <pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://cgmartini.nl/docs/announcements/posts/2023-06-06-ubiquitination/image.png" medium="image" type="image/png" height="99" width="144"/>
 </item>
 <item>
   <title>Reactive Martini</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-06-17-reactive-martini/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-06-17-reactive-martini/</link>
   <description><![CDATA[ 
 
 
@@ -112,13 +242,13 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-06-17-reactive-martini/</guid>
-  <pubDate>Tue, 21 May 2024 06:00:00 GMT</pubDate>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-06-17-reactive-martini/</guid>
+  <pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Martini 3 LPS</title>
   <dc:creator>Daniel Ramirez</dc:creator>
-  <link>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-09-15-martini3-LPS/</link>
+  <link>https://cgmartini.nl/docs/announcements/posts/2023-09-15-martini3-LPS/</link>
   <description><![CDATA[ 
 
 
@@ -130,8 +260,8 @@
 
 
  ]]></description>
-  <guid>https://martini-force-field-initiative.github.io/docs/announcements/posts/2023-09-15-martini3-LPS/</guid>
-  <pubDate>Tue, 21 May 2024 06:00:00 GMT</pubDate>
+  <guid>https://cgmartini.nl/docs/announcements/posts/2023-09-15-martini3-LPS/</guid>
+  <pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
