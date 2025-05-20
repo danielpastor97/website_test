@@ -138,7 +138,7 @@ async function loadAnnouncements() {
         const viewAllButton = document.createElement('div');
         viewAllButton.className = 'view-all-container';
         viewAllButton.innerHTML = `
-            <a href="/docs/announcements/" class="view-all-button">
+            <a href="/website_test/docs/announcements/" class="view-all-button">
                 <span>View All Announcements</span>
                 <span class="arrow">→</span>
             </a>
